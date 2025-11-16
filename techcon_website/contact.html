@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - TechCon 2024</title>
+    <link rel="stylesheet" href="styles.css"> 
+    </head>
+<body>
+<header>
+    <h1>Contact Us</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    
+    <section id="contact-details">
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
+        
+        <h3>Follow Us</h3>
+        <ul>
+            <li><a href="https://twitter.com/TechCon" target="_blank">Twitter</a></li>
+            <li><a href="https://facebook.com/TechCon" target="_blank">Facebook</a></li>
+            <li><a href="https://linkedin.com/company/TechCon" target="_blank">LinkedIn</a></li>
+        </ul>
+    </section>
+
+    
+    <section id="location">
+        <h2>Conference Location</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019021...etc" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+
+    
+    <section id="contact-form">
+        <h2>Send Us a Message</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</main>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 1em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+input, textarea, button {
+    padding: 0.5em;
+    width: 100%;
+    max-width: 500px;
+}
+
+iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
+  </body>  
+
+<footer>
+    <p>&copy; 2024 TechCon. All Rights Reserved.</p>
+</footer>
+</html>
